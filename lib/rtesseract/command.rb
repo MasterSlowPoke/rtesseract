@@ -9,7 +9,7 @@ class RTesseract
       @output = output
       @options = options
       @errors = errors
-      @full_command = [options.command, @source, @output]
+      @full_command = ['tesseract', @source, @output]
     end
 
     def full_command
